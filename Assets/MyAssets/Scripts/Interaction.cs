@@ -18,19 +18,29 @@ namespace MyAssets.Scripts
 
         private void OnEnable()
         {
+            
+            if (_gameInput == null)
+            {
+                _gameInput = new GameInput();
+            }
+
             _gameInput.Gameplay.Interact.performed += Interact;
+            _gameInput.Enable();
         }
 
         private void OnDisable()
         {
-            _gameInput.Gameplay.Interact.performed -= Interact;
+            
+            if (_gameInput != null)
+            {
+                _gameInput.Gameplay.Interact.performed -= Interact;
+                _gameInput.Disable();
+            }
         }
 
         private void Awake()
         {
-            _gameInput = new GameInput();
-            _gameInput.Enable();
-            
+
             _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         }
 

@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MyAssets.Scripts.GameManager
   currentGroup: None
-  tablesAmount: 1
+  tablesAmount: 3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,6 +520,62 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8c3e9d22fd556f54f9e0079a3248d31b, type: 3}
+--- !u!1 &1436388633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1436388635}
+  - component: {fileID: 1436388634}
+  m_Layer: 0
+  m_Name: Board
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1436388634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436388633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9679b8ca6501542719d5c390e78ff28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MyAssets.Scripts.MahjongBoardSpawner
+  tilePrefab: {fileID: 1664770837}
+  availableTileTypes:
+  - {fileID: 11400000, guid: a910a40fb8b9e9c4893238d625aae460, type: 2}
+  - {fileID: 11400000, guid: d9b172109f909fa4490744bfb78c2962, type: 2}
+  tileWidth: 1.1
+  tileHeight: 0.5
+  tileLength: 1.5
+--- !u!4 &1436388635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436388633}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1664770837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6624079406852267370, guid: 8c3e9d22fd556f54f9e0079a3248d31b, type: 3}
+  m_PrefabInstance: {fileID: 6539817806836807897}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4084751199128062029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -651,3 +707,4 @@ SceneRoots:
   - {fileID: 4084751199128062029}
   - {fileID: 845425742}
   - {fileID: 110357540}
+  - {fileID: 1436388635}

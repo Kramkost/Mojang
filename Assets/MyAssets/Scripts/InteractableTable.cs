@@ -73,5 +73,15 @@ namespace MyAssets.Scripts
         {
             if (useAsset != _use) useAsset = _use;
         }
+
+    public void Init(TableAsset asset)
+   { 
+    useAsset = true;
+    tableAsset = asset;
+    _use = true;
+    UnSelected(); 
+   }
     }
+
+
 }
