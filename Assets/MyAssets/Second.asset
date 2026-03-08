@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396ce9fe71933a14282b9633ac3ccfd8, type: 3}
+  m_Name: Second
+  m_EditorClassIdentifier: Assembly-CSharp::MyAssets.Scripts.TableAsset
+  group: amogus
+  selectedTable: {fileID: 2100000, guid: 3586f6f5d18d65a459f79c4e189fbc17, type: 2}
+  nonSelectedTable: {fileID: 2100000, guid: a125b8f756bd4e644960be541b503d7a, type: 2}
