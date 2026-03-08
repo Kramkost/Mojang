@@ -55,7 +55,7 @@ namespace MyAssets.Scripts
                     {
                         var table = _hit.collider.gameObject;
                         
-                        if (table.TryGetComponent(out InteractableObject interactableObject))
+                        if (table.TryGetComponent(out InteractableTable interactableObject))
                         {
                             bool haveObject = gameObjects.Find(x => x == table);
 
@@ -106,14 +106,14 @@ namespace MyAssets.Scripts
 
         private void UnSelect(GameObject table)
         {
-            table.GetComponent<InteractableObject>().UnSelected();
+            table.GetComponent<InteractableTable>().UnSelected();
             gameObjects.Remove(table);
         }
 
         private void DestroyTable(GameObject table)
         {
             gameObjects.Remove(table);
-            table.GetComponent<InteractableObject>().Destroy();
+            table.GetComponent<InteractableTable>().Destroy();
         }
     }
 }   
